@@ -1,0 +1,28 @@
+{
+    "nodes": [{
+        "id": 3,
+        "name": "2"
+    }, {
+        "id": 2,
+        "name": "1"
+    }, {
+        "id": 6,
+        "name": "鸟佛们车o 发eaoipmfieoa 发么就爱就翻车oam  积分 "
+    }, {
+        "id": 5,
+        "name": "11"
+    }],
+    "links": [{
+        "source": "鸟佛们车o 发eaoipmfieoa 发么就爱就翻车oam  积分 ",
+        "target": "2",
+        "relation": null
+    }, {
+        "source": "鸟佛们车o 发eaoipmfieoa 发么就爱就翻车oam  积分 ",
+        "target": "11",
+        "relation": null
+    }, {
+        "source": "鸟佛们车o 发eaoipmfieoa 发么就爱就翻车oam  积分 ",
+        "target": "1",
+        "relation": null
+    }]
+}

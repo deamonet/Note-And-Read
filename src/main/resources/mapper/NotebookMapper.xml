@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="me.deamonet.nar.mapper.NotebookMapper">
+
+    <select id="selectTotalNumber" resultType="Integer">
+        select count(*) from notebook where uid = #{uid};
+    </select>
+
+    <select id="select" resultType="Notebook">
+        select * from notebook where id=#{id}
+    </select>
+
+    <select id="selectAll" resultType="Notebook">
+        select * from notebook <where><if test="uid != null"> uid = #{uid} </if></where> LIMIT 100;
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="Notebook">
+        insert into notebook
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name!=null">name, </if>
+            <if test="uid!=null">uid, </if>
+            <if test="description!=null">`description`, </if>
+        </trim>
+        <trim prefix="VALUES (" suffix=")" suffixOverrides=",">
+            <if test="name!=null">#{name}, </if>
+            <if test="uid!=null">#{uid}, </if>
+            <if test="description!=null">#{description}, </if>
+        </trim>
+    </insert>
+
+    <update id="update" parameterType="Notebook">
+        UPDATE notebook
+        <set>
+            <if test="name!=null">name=#{name}, </if>
+            <if test="description!=null">`description` = #{description}</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="Integer">
+        delete from notebook where id=#{id}
+    </delete>
+</mapper>

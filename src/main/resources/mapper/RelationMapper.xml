@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="me.deamonet.nar.mapper.RelationMapper">
+
+
+    <select id="selectByNote" resultType="Relation">
+        select *
+        from relation
+        where source = #{id}
+        limit 100;
+    </select>
+
+    <select id="selectByNotebook" resultType="Relation">
+        select *
+        from relation
+        where notebookid = #{notebookid}
+        limit 100;
+    </select>
+
+
+    <insert id="insert" parameterType="Relation">
+        insert into relation
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="notebookid!=null">notebookid,</if>
+            <if test="source!=null">source,</if>
+            <if test="target!=null">target,</if>
+            <if test="sourceTitle!=null">source_title,</if>
+            <if test="targetTitle!=null">target_title,</if>
+        </trim>
+        <trim prefix="VALUES (" suffix=")" suffixOverrides=",">
+            <if test="notebookid!=null">#{notebookid},</if>
+            <if test="source!=null">#{source},</if>
+            <if test="target!=null">#{target},</if>
+            <if test="sourceTitle!=null">#{sourceTitle},</if>
+            <if test="targetTitle!=null">#{targetTitle},</if>
+
+        </trim>
+    </insert>
+
+    <update id="update" parameterType="Relation">
+        UPDATE relation
+        <set>
+            <if test="title!=null">target = #{target}</if>
+        </set>
+        WHERE `id`=#{id}
+    </update>
+
+    <delete id="delete" parameterType="Integer">
+        delete
+        from `relation`
+        where source = #{source} and target = #{target}
+    </delete>
+
+
+    <delete id="deleteByNote" parameterType="Integer">
+        delete
+        from `relation`
+        where source = #{source}
+           or target = #{target}
+    </delete>
+
+</mapper>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>笔记本</title>
+  <link href="../layui/css/layui.css" rel="stylesheet" />
+  <link href="../css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="layui-container">
+
+    <div class="layui-row">
+      <div class="layui-col-md12">
+        <div>
+          <ul class="layui-nav" lay-filter="">
+            <li class="layui-nav-item"><a href="./index.html">首页&nbsp<i class="layui-icon layui-icon-home"></i></a></li>
+            <li class="layui-nav-item layui-this"><a href="./notebook-list.html">笔记&nbsp<i
+                  class="layui-icon layui-icon-note"></i></a></li>
+            <li class="layui-nav-item"><a href="./article-list.html">阅读&nbsp<i
+                  class="layui-icon layui-icon-align-left"></i></a></li>
+            <li class="layui-nav-item"><a href="./search.html">搜索&nbsp<i class="layui-icon layui-icon-search"></i></a>
+            </li>
+          </ul>
+          <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+              <a href="./user.html">我&nbsp<i class="layui-icon layui-icon-user"></i></a>
+              <dl class="layui-nav-child">
+                <dd><a href="./user-edit.html">修改信息&nbsp<i class="layui-icon layui-icon-edit"></i></a></dd>
+                <dd><a href="./index.html" id="logout">注销&nbsp<i class="layui-icon layui-icon-logout"></i></a></dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item">
+              <span>&nbsp;</span>
+              <span>&nbsp;</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="layui-row">
+      <div class="layui-bg-gray" id="notebook-list" style="padding: 30px;"></div>
+    </div>
+    <div class="layui-row">
+      <div class="wrapper">
+        <a href="./notebook-edit.html" class="layui-btn">新增笔记本<i class="layui-icon layui-icon-addition"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <script id="list" type="text/html">
+    {{# let i = 3;}}
+    {{# for (i; i <= d.length; i += 3) { }}
+    <div class="layui-row layui-col-space15">
+      <div class="layui-col-md4">
+        <div class="layui-card">
+          <div class="layui-card-header">
+            <a href="./note-list.html?id={{d[i-3].id}}" 
+            style="color:black">{{d[i-3].name}}</a>
+          </div>
+          <div class="layui-card-body">{{d[i-3].description}}</div>
+        </div>
+      </div>
+      <div class="layui-col-md4">
+        <div class="layui-card">
+          <div class="layui-card-header">
+            <a href="./note-list.html?id={{d[i-2].id}}"
+              style="color:black">{{d[i-2].name}}</a>
+            </div>
+          <div class="layui-card-body">{{d[i-2].description}}</div>
+        </div>
+      </div>
+      <div class="layui-col-md4">
+        <div class="layui-card">
+          <div class="layui-card-header">
+            <a href="./note-list.html?id={{d[i-1].id}}" 
+            style="color:black">{{d[i-1].name}}</a>
+          </div>
+          <div class="layui-card-body">{{d[i-1].description}}</div>
+        </div>
+      </div>
+    </div>
+    {{# } }}
+    <div class="layui-row layui-col-space15">
+      {{# for (var j = i-3; j < d.length; j++) { }}
+      <div class="layui-col-md4">
+        <div class="layui-card">
+          <div class="layui-card-header">
+            <a href="./note-list.html?id={{d[j].id}}"
+              style="color:black">{{d[j].name}}</a>
+            </div>
+          <div class="layui-card-body">{{d[j].description}}</div>
+        </div>
+      </div>
+      {{# } }}
+    </div>
+  </script>
+
+  <script src="../layui/layui.js"></script>
+  <script src="../js/user_require.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/logout.js"></script>
+  
+
+  <script>
+    layui.use(["layer", "form", "element", "laypage", "laytpl"], function () {
+      var layer = layui.layer;
+      var form = layui.form;
+      var element = layui.element;
+      var laypage = layui.laypage;
+      var laytpl = layui.laytpl;
+
+      let notebook_list_template = list.innerHTML;
+      let notebook_list_view = document.getElementById("notebook-list");
+    
+      fetch(notebook_url + "/all", config_get)
+        .then((response) => response.json())
+        .then((json) => {
+          if (json.code==200){
+            laytpl(notebook_list_template).render(json.data, function (html) {
+              notebook_list_view.innerHTML = html;
+              element.render();
+            });
+          } else {
+            error(json.message);
+          }
+        });
+    });
+  </script>
+</body>
+
+</html>

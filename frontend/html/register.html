@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>注册</title>
+  <link href="../layui/css/layui.css" rel="stylesheet" />
+  <link href="../css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="layui-container">
+    <div class="layui-row">
+      <div class="layui-col-md12">
+        <div>
+          <ul class="layui-nav" lay-filter="">
+            <li class="layui-nav-item"><a href="./index.html">首页&nbsp<i class="layui-icon layui-icon-home"></i></a></li>
+            <li class="layui-nav-item"><a href="./notebook-list.html">笔记&nbsp<i
+                  class="layui-icon layui-icon-note"></i></a></li>
+            <li class="layui-nav-item"><a href="./article-list.html">阅读&nbsp<i
+                  class="layui-icon layui-icon-align-left"></i></a></li>
+            <li class="layui-nav-item"><a href="./search.html">搜索&nbsp<i class="layui-icon layui-icon-search"></i></a>
+            </li>
+          </ul>
+          <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item layui-this">
+              <a href="./login.html">登录&nbsp<i class="layui-icon layui-icon-username"></i>&nbsp/&nbsp注册&nbsp<i
+                  class="layui-icon layui-icon-release"></i></a>
+            </li>
+            <li class="layui-nav-item">
+              <span>&nbsp;</span>
+              <span>&nbsp;</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="layui-row">
+      <div class="wrapper" style="margin-top: 5%;">
+        <h2>注册</h2>
+      </div>
+    </div>
+    <div class="layui-row">
+      <div style="display: flex; justify-content: center">
+        <div class="layui-form layui-form-pane">
+          <div class="layui-form-item">
+            <label class="layui-form-label">昵称</label>
+            <div class="layui-input-inline">
+              <input type="text" name="name" required lay-verify="required" placeholder="请输入昵称" autocomplete="off"
+                class="layui-input" />
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">用户名</label>
+            <div class="layui-input-inline">
+              <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off"
+                class="layui-input" />
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">电子邮件</label>
+            <div class="layui-input-inline">
+              <input type="text" name="email" required lay-verify="required" placeholder="请输入电子邮件"
+                autocomplete="off" class="layui-input" />
+            </div>
+          </div>
+
+          <div class="layui-form-item">
+            <label class="layui-form-label">电话号码</label>
+            <div class="layui-input-inline">
+              <input type="text" name="phoneNumber" required lay-verify="required" placeholder="请输入电话号码"
+                autocomplete="off" class="layui-input" />
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-inline">
+              <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+                autocomplete="off" class="layui-input" />
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <div class="layui-input-block">
+              <button class="layui-btn" lay-submit lay-filter="register">
+                注册
+              </button>
+              <button type="reset" class="layui-btn layui-btn-primary">
+                重置
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../layui/layui.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    layui.use(["layer", "form", "element"], function () {
+      var layer = layui.layer;
+      var form = layui.form;
+      var element = layui.element;
+
+      form.on("submit(register)", function (data) {
+        json_data = JSON.stringify(data.field);
+        console.log(typeof json_data);
+        console.log(json_data);
+        config = {
+          method: 'POST',
+          body: json_data,
+          headers: new Headers({
+            'Content-Type': 'application/json'
+          })
+        }
+        fetch(register_url, config)
+          .then(response => response.json())
+          .then(json => {
+            console.log(json)
+            if (json.code === 200) {
+              window.location.href = `./login.html`;
+            } else {
+              error(json.message);
+            }
+          })
+        return false;
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+GET http://localhost:19201/index
+
+###
+GET http://localhost:19201/
+
+###
+GET http://localhost:19201/index

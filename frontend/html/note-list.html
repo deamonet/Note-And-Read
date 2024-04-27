@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>笔记列表</title>
+  <link href="../layui/css/layui.css" rel="stylesheet" />
+  <link href="../css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="layui-container">
+    <div class="layui-row">
+      <div class="layui-col-md12">
+        <div>
+          <ul class="layui-nav" lay-filter="">
+            <li class="layui-nav-item"><a href="./index.html">首页&nbsp<i class="layui-icon layui-icon-home"></i></a></li>
+            <li class="layui-nav-item layui-this">
+              <a href="./notebook-list.html">笔记&nbsp<i class="layui-icon layui-icon-note"></i></a>
+            </li>
+            <li class="layui-nav-item"><a href="./article-list.html">阅读&nbsp<i
+                  class="layui-icon layui-icon-align-left"></i></a></li>
+            <li class="layui-nav-item"><a href="./search.html">搜索&nbsp<i class="layui-icon layui-icon-search"></i></a>
+            </li>
+          </ul>
+          <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item layui-this">
+              <a href="./user.html">我&nbsp<i class="layui-icon layui-icon-user"></i></a>
+              <dl class="layui-nav-child">
+                <dd><a href="./user-edit.html">修改信息&nbsp<i class="layui-icon layui-icon-edit"></i></a></dd>
+                <dd><a href="./index.html" id="logout">注销&nbsp<i class="layui-icon layui-icon-logout"></i></a></dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item">
+              <span>&nbsp;</span>
+              <span>&nbsp;</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="layui-row layui-col-space20">
+      <div class="layui-col-md2 layui-col-md-offset2" id="notebook-info"></div>
+      <div class="layui-col-md8" id="note-list"></div>
+    </div>
+    <div class="layui-row">
+      <div class="wrapper">            
+        <div id="note-pagination"></div>
+      </div>
+      <div class="wrapper">
+        <button type="button" class="layui-btn" id="delete">删除笔记本&nbsp
+          <i class="layui-icon layui-icon-delete"></i></button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script id="notebookinfo" type="text/html">
+    <div class="layui-card" style="margin-top: 10%;">
+      <div class="layui-row">
+        <div class="wrapper">
+          <h2>{{d.name}}</h2>
+        </div>
+      </div>
+      <div class="layui-row">
+        <div class="wrapper">
+          <div class="layui-text">{{d.description}}</div>
+        </div>
+      </div>
+      <div class="layui-row">
+        <div class="wrapper">
+          <a href="./notebook-edit.html?id={{d.id}}" class="layui-btn">编辑笔记本&nbsp
+            <i class="layui-icon layui-icon-edit"></i></a>
+        </div>
+      </div>
+      <div class="layui-row">
+        <div class="wrapper">
+          <a href="./note-edit.html?notebookid={{d.id}}" class="layui-btn">新增笔记&nbsp
+            <i class="layui-icon layui-icon-addition"></i></a>
+        </div>
+      </div>
+      <div class="layui-row">
+        <div class="wrapper">
+          <a href="./note-net.html?id={{d.id}}" class="layui-btn">笔记知识网&nbsp
+            <i class="layui-icon layui-icon-find-fill"></i></a>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script id="notelist" type="text/html">
+    <div>
+      <ul class="layui-timeline">
+        {{# layui.each(d, function (index, note) { }}
+        <li class="layui-timeline-item">
+          <i class="layui-icon layui-timeline-axis"></i>
+          <div class="layui-timeline-content layui-text">
+            <h3 class="layui-menu-body-title">
+              <a href="./note-content.html?id={{note.id}}" style="color:black">{{note.title}}</a>
+            </h3>
+            <p>{{note.content.substring(0, 10)}}</p>
+          </div>
+        </li>
+        {{# });}}
+      </ul>
+    </div>
+  </script>
+
+
+
+  <script src="../layui/layui.js"></script>
+  <script src="../js/user_require.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/logout.js"></script>
+  <script src="../js/id_require.js"></script>
+
+
+  <script>
+    layui.use(["layer", "form", "element", "laypage", "laytpl"], function () {
+      var layer = layui.layer;
+      var form = layui.form;
+      var element = layui.element;
+      var laypage = layui.laypage;
+      var laytpl = layui.laytpl;
+      var $ = layui.jquery;
+      
+
+      let notebook_template = notebookinfo.innerHTML;
+      let notebook_view = document.getElementById("notebook-info");
+
+      let note_list_template = notelist.innerHTML;
+      let note_list_view = document.getElementById("note-list");
+
+
+      fetch(notebook_url + `/${id}`, config_get)
+        .then((response) => response.json())
+        .then((json) => {
+          if (json.code == 200) {
+            laytpl(notebook_template).render(json.data, function (html) {
+              notebook_view.innerHTML = html;
+              element.render();
+            });
+          } else {
+            error(json.message);
+          }
+        })
+
+
+
+      fetch(note_url + `/total?notebookid=${id}`, config_get)
+        .then((response) => response.json())
+        .then((json) => {
+          laypage.render({
+            elem: "note-pagination",
+            limit: page_size,
+            count: json.data,
+            jump: function (obj) {
+              let offset = obj.curr * obj.limit - obj.limit;
+              fetch(note_url + `/list?offset=${offset}&page_size=${obj.limit}&notebookid=${id}`, config_get)
+                .then((response) => response.json())
+                .then((json) => {
+                  if (json.code == 200) {
+                    laytpl(note_list_template).render(json.data, function (html) {
+                      note_list_view.innerHTML = html;
+                      element.render();
+                    });
+                  } else {
+                    error(json.message);
+                  }
+                });
+            },
+          });
+        });
+
+        $("#delete").click( function () {
+          console.log('ues')
+          let config = {
+            method: 'DELETE',
+            credentials: "include",
+          }
+          fetch(notebook_url + `/${id}`, config).then(response => response.json()).then(json => {
+            if (json.code == 200) {
+              window.location.href = "./notebook-list.html";
+            }
+          })
+        });
+
+    });
+  </script>
+</body>
+
+</html>

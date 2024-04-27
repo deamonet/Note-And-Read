@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>修改密码</title>
+  <link href="../layui/css/layui.css" rel="stylesheet" />
+  <link href="../css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="layui-container">
+    <div class="layui-row">
+      <div class="layui-col-md12">
+        <div>
+          <ul class="layui-nav" lay-filter="">
+            <li class="layui-nav-item"><a href="./index.html">首页&nbsp<i class="layui-icon layui-icon-home"></i></a></li>
+            <li class="layui-nav-item"><a href="./notebook-list.html">笔记&nbsp<i
+                  class="layui-icon layui-icon-note"></i></a></li>
+            <li class="layui-nav-item"><a href="./article-list.html">阅读&nbsp<i
+                  class="layui-icon layui-icon-align-left"></i></a></li>
+            <li class="layui-nav-item"><a href="./search.html">搜索&nbsp<i class="layui-icon layui-icon-search"></i></a>
+            </li>
+          </ul>
+          <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item layui-this">
+              <a href="./login.html">登录&nbsp<i class="layui-icon layui-icon-username"></i>&nbsp/&nbsp注册&nbsp<i
+                  class="layui-icon layui-icon-release"></i></a>
+            </li>
+            <li class="layui-nav-item">
+              <span>&nbsp;</span>
+              <span>&nbsp;</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="layui-row">
+      <div class="wrapper" style="margin-top: 10%">
+        <h2>登录</h2>
+      </div>
+    </div>
+    <div class="layui-row">
+      <div class="wrapper">
+        <form class="layui-form layui-form-pane" action="" target="stop">
+          <div class="layui-form-item">
+            <label class="layui-form-label">用户名</label>
+            <div class="layui-input-inline">
+              <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off"
+                class="layui-input" />
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-inline">
+              <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+                autocomplete="off" class="layui-input" />
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <div class="layui-input-block">
+              <button type="submit" class="layui-btn" lay-submit="" lay-filter="login-api">
+                登录
+              </button>
+              <button type="reset" class="layui-btn layui-btn-primary">
+                重置
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="layui-row">
+      <div class="wrapper">
+        <div class="layui-form-mid layui-word-aux">
+          还没有账号，请<a href="./register.html">注册</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../layui/layui.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    layui.use(["layer", "form", "element"], function () {
+      var layer = layui.layer;
+      var form = layui.form;
+      var element = layui.element;
+
+      //提交
+      form.on('submit(login-api)', function (data) {
+        let config = {
+          method: 'POST',
+          credentials: 'include',
+          headers: new Headers({'Content-Type': 'application/x-www-form-urlencoded'})
+        }
+        fetch(login_url + `?username=${data.field.username}&password=${data.field.password}`, config)
+          .then(response => response.json())
+          .then(json => {
+            if (json.code === 200) {
+              layui.sessionData("user", {
+                key: 'username',
+                value: data.field.username
+              });
+              layui.sessionData("user", {
+                key: 'userid',
+                value: json.data
+              });
+              index();
+            } else {
+              error(json.message);
+            }
+          })
+        return false;
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="me.deamonet.nar.mapper.NoteMapper">
+
+    <select id="selectTotalNumber" resultType="Integer">
+        select count(*) from note where notebookid=#{notebookid};
+    </select>
+
+    <select id="select" resultType="Note">
+        select * from note where id=#{id};
+    </select>
+
+    <select id="selectMultiple" resultType="Note">
+        select * from note where id in
+        <foreach collection="list" index="index" item="id" open="(" close=")" separator=", ">
+            #{id}
+        </foreach>
+    </select>
+
+    <select id="selectPage" resultType="Note">
+        select * from note where notebookid=#{notebookid} limit #{offset}, #{page_size};
+    </select>
+
+    <select id="selectAll" resultType="Note">
+        select * from note where notebookid=#{notebookid} limit 100;
+    </select>
+
+
+    <select id="selectSearch" resultType="Note">
+        select * from note
+        where match (content) against (concat(#{search_value},'*') in boolean mode) AND uid=#{uid};
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="Note">
+        insert into note
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="uid!=null">uid,</if>
+            <if test="notebookid!=null">notebookid,</if>
+            <if test="title!=null">title,</if>
+            <if test="content!=null">content,</if>
+        </trim>
+        <trim prefix="VALUES (" suffix=")" suffixOverrides=",">
+            <if test="uid!=null">#{uid},</if>
+            <if test="notebookid!=null">#{notebookid},</if>
+            <if test="title!=null">#{title},</if>
+            <if test="content!=null">#{content},</if>
+        </trim>
+    </insert>
+
+    <update id="update" parameterType="note">
+        UPDATE note
+        <set>
+            <if test="title!=null">title=#{title},</if>
+            <if test="content!=null">content=#{content}</if>
+        </set>
+        WHERE `id`=#{id}
+    </update>
+
+    <delete id="delete" parameterType="Integer">
+        delete from `note` where id=#{id}
+    </delete>
+
+</mapper>

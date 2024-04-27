@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>unSafe.sh - 不安全</title>
+        <link>https://unsafe.sh/</link>
+        <description>unSafe.sh - 不安全</description>
+        <item>
+            <title>Fixing incredibly slow launching on Intel’s Rapid Storage Technology / Virtual RAID on CPU
+                application
+            </title>
+            <link>https://unsafe.sh/go-155890.html</link>
+            <description>Fixing incredibly slow launching on Intel’s Rapid Storage Technology / Virtual RAID on CPU
+                application
+            </description>
+            <pubDate>2023-3-29 16:18:13</pubDate>
+        </item>
+        <item>
+            <title>漏洞预警|Apache Tomcat 信息泄露漏洞</title>
+            <link>https://unsafe.sh/go-155891.html</link>
+            <description>漏洞预警|Apache Tomcat 信息泄露漏洞</description>
+            <pubDate>2023-3-29 16:8:12</pubDate>
+        </item>
+        <item>
+            <title>Golang反射学习：手写一个RPC</title>
+            <link>https://unsafe.sh/go-155887.html</link>
+            <description>Golang反射学习：手写一个RPC</description>
+            <pubDate>2023-3-29 16:2:46</pubDate>
+        </item>
+        <item>
+            <title>APP中WebResourceResponse漏洞分析</title>
+            <link>https://unsafe.sh/go-155879.html</link>
+            <description>APP中WebResourceResponse漏洞分析</description>
+            <pubDate>2023-3-29 15:28:45</pubDate>
+        </item>
+        <item>
+            <title>海云安在中国金融业开源技术应用与发展论坛上荣获“金融开源践行者”表彰</title>
+            <link>https://unsafe.sh/go-155874.html</link>
+            <description>海云安在中国金融业开源技术应用与发展论坛上荣获“金融开源践行者”表彰</description>
+            <pubDate>2023-3-29 15:10:26</pubDate>
+        </item>
+        <item>
+            <title>防范工业网络间谍活动的6个最佳实践</title>
+            <link>https://unsafe.sh/go-155875.html</link>
+            <description>防范工业网络间谍活动的6个最佳实践</description>
+            <pubDate>2023-3-29 15:5:19</pubDate>
+        </item>
+        <item>
+            <title>四部门联合发布《关于开展网络安全服务认证工作的实施意见》</title>
+            <link>https://unsafe.sh/go-155876.html</link>
+            <description>四部门联合发布《关于开展网络安全服务认证工作的实施意见》</description>
+            <pubDate>2023-3-29 15:5:16</pubDate>
+        </item>
+        <item>
+            <title>2022中国企业邮箱安全性研究：钓鱼邮件同比增长24.5%</title>
+            <link>https://unsafe.sh/go-155877.html</link>
+            <description>2022中国企业邮箱安全性研究：钓鱼邮件同比增长24.5%</description>
+            <pubDate>2023-3-29 15:5:14</pubDate>
+        </item>
+        <item>
+            <title>Cómo realizar movimientos laterales con Socat – Parte 2 de 2</title>
+            <link>https://unsafe.sh/go-155881.html</link>
+            <description>Cómo realizar movimientos laterales con Socat – Parte 2 de 2</description>
+            <pubDate>2023-3-29 15:0:7</pubDate>
+        </item>
+        <item>
+            <title>java代码审计中不能忽略的思路-持续更新 - 飘渺红尘✨</title>
+            <link>https://unsafe.sh/go-155884.html</link>
+            <description>java代码审计中不能忽略的思路-持续更新 - 飘渺红尘✨</description>
+            <pubDate>2023-3-29 14:51:0</pubDate>
+        </item>
+        <item>
+            <title>某UXSS从挖掘到利用</title>
+            <link>https://unsafe.sh/go-155885.html</link>
+            <description>某UXSS从挖掘到利用</description>
+            <pubDate>2023-3-29 14:30:3</pubDate>
+        </item>
+        <item>
+            <title>播客 | 去年玩键盘，今年搞鼠标？谈谈最近的鼠标热潮</title>
+            <link>https://unsafe.sh/go-155873.html</link>
+            <description>播客 | 去年玩键盘，今年搞鼠标？谈谈最近的鼠标热潮</description>
+            <pubDate>2023-3-29 14:22:19</pubDate>
+        </item>
+        <item>
+            <title>dll劫持入门</title>
+            <link>https://unsafe.sh/go-155878.html</link>
+            <description>dll劫持入门</description>
+            <pubDate>2023-3-29 14:11:0</pubDate>
+        </item>
+        <item>
+            <title>微信、QQ“崩了”</title>
+            <link>https://unsafe.sh/go-155872.html</link>
+            <description>微信、QQ“崩了”</description>
+            <pubDate>2023-3-29 13:25:41</pubDate>
+        </item>
+        <item>
+            <title>广东报告一例人感染 H3N8 禽流感病例</title>
+            <link>https://unsafe.sh/go-155862.html</link>
+            <description>广东报告一例人感染 H3N8 禽流感病例</description>
+            <pubDate>2023-3-29 12:3:58</pubDate>
+        </item>
+        <item>
+            <title>Apache iotdb-web-workbench 认证绕过漏洞（CVE-2023-24829）</title>
+            <link>https://unsafe.sh/go-155847.html</link>
+            <description>Apache iotdb-web-workbench 认证绕过漏洞（CVE-2023-24829）</description>
+            <pubDate>2023-3-29 12:1:31</pubDate>
+        </item>
+        <item>
+            <title>Lockbit勒索软件攻击德国跨国公司，威胁要泄露所有数据</title>
+            <link>https://unsafe.sh/go-155841.html</link>
+            <description>Lockbit勒索软件攻击德国跨国公司，威胁要泄露所有数据</description>
+            <pubDate>2023-3-29 12:0:0</pubDate>
+        </item>
+        <item>
+            <title>V8漏洞在《DOTA2》游戏中被利用</title>
+            <link>https://unsafe.sh/go-155842.html</link>
+            <description>V8漏洞在《DOTA2》游戏中被利用</description>
+            <pubDate>2023-3-29 12:0:0</pubDate>
+        </item>
+        <item>
+            <title>Goby 利用内存马中的一些技术细节【技术篇】</title>
+            <link>https://unsafe.sh/go-155843.html</link>
+            <description>Goby 利用内存马中的一些技术细节【技术篇】</description>
+            <pubDate>2023-3-29 11:52:9</pubDate>
+        </item>
+        <item>
+            <title>ChatGPT 写 PoC，拿下漏洞！</title>
+            <link>https://unsafe.sh/go-155844.html</link>
+            <description>ChatGPT 写 PoC，拿下漏洞！</description>
+            <pubDate>2023-3-29 11:51:3</pubDate>
+        </item>
+    </channel>
+</rss>

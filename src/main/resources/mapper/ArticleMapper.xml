@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="me.deamonet.nar.mapper.ArticleMapper">
+
+    <select id="selectTotalNumber" resultType="Integer">
+        select count(*) from article
+        <where>
+            <if test="uid!=null">uid=#{uid}</if>
+            <if test="is_read!=null">and is_read=#{is_read}</if>
+        </where>
+    </select>
+
+    <select id="select" resultType="Article">
+        select *
+        from article
+        where id = #{id}
+    </select>
+
+    <select id="selectTitle" resultType="Article">
+        select * from article where uid=#{uid} and title = #{title}
+    </select>
+    <select id="selectPage" resultType="Article">
+        select * from article
+        <where>
+            <if test="uid != null">
+                uid = #{uid}
+            </if>
+            <if test="is_read != null">
+                and is_read = #{is_read}
+            </if>
+        </where>
+        limit #{offset}, #{page_size}
+    </select>
+
+    <select id="search" resultType="Article">
+        select * from article
+        where MATCH(content) against(concat(#{search_value}, '*') in boolean mode) and uid=#{uid}
+    </select>
+
+
+    <insert id="insertList" parameterType="java.util.List">
+        INSERT INTO article (uid, sourceid, guid, title, author, creator, content, link, first_publish, tags, is_read)
+        values
+        <foreach collection="article_list" item="Article" separator=",">
+            (#{Article.uid}, #{Article.sourceid}, #{Article.guid},#{Article.title},
+            #{Article.author},#{Article.creator},#{Article.content}, #{Article.link}, #{Article.firstPublish},
+            #{Article.tags}, false)
+        </foreach>
+    </insert>
+
+    <update id="read" parameterType="Integer">
+        update article set is_read=true where id=#{id}
+    </update>
+
+</mapper>

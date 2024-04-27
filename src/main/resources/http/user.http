@@ -1,0 +1,64 @@
+# User
+POST http://localhost:19201/login
+Content-Type: application/x-www-form-urlencoded
+
+{
+  "username": "deamonet",
+  "password": "123456"
+}
+<> 2023-04-03T040511.200.json
+
+
+###
+GET http://localhost:19201/index
+
+<> 2023-04-03T040613.200.txt
+<> 2023-04-03T040523.200.txt
+<> 2023-04-03T021119.200.txt
+
+###
+GET http://localhost:19201/user/{{username}}
+
+<> 2023-04-03T040609.500.json
+<> 2023-04-03T021224.500.json
+<> 2023-04-03T021202.500.json
+
+###
+POST http://localhost:19201/user/2/articles/update
+Accept: application/json
+Cookie:JSESSIONID=06735542C0D66EF5D7E3BB9102065B06; Path=/; HttpOnly
+
+<> 2023-04-03T040605.200.json
+<> 2023-04-03T021311.200.json
+
+###
+GET http://localhost:19201/user/{{id}}
+
+<> 2023-04-03T040601.200.json
+<> 2023-04-03T040508.200.json
+<> 2023-04-03T021415.200.json
+<> 2023-04-03T021403.200.json
+
+###
+POST http://localhost:19201/register
+Content-Type: application/json
+
+{
+  "name": 123,
+  "username": 123,
+  "email": 123,
+  "phoneNumber": 123,
+  "password": 123
+}
+
+
+###
+PUT http://localhost:19201/user
+
+<> 2023-04-03T023017.200.json
+
+###
+DELETE http://localhost:19201/user/{{id}}
+
+<> 2023-04-03T031815.200.json
+<> 2023-04-03T023030.200.json

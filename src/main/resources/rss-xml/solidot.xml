@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>奇客Solidot&#8211;传递最新科技情报</title>
+        <link>https://www.solidot.org</link>
+        <description><![CDATA[奇客的知识，重要的东西。]]></description>
+        <atom:link href="https://www.solidot.org/index.rss" rel="self" type="application/rss+xml"></atom:link>
+        <language>zh-cn</language>
+        <pubDate>Tue, 21 Mar 2023 15:33:35 +0800</pubDate>
+        <ttl>20</ttl>
+        <item>
+            <title><![CDATA[印度为搜捕分离分子领导人切断了旁遮普省的互联网]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74447]]></link>
+            <description><![CDATA[印度警方在旁遮普省展开大规模行动，搜捕锡克教分离主义领导人  Amritpal Singh。印度当局自周六起就限制了旁遮普省的通信和网络，至今已持续了四天。这场搜捕行动是在 Singh 及其数百名支持者手持刀枪冲进一个警察局，要求释放一名助手的一个月后进行的，六名警官在当日的冲突中受伤。Singh 是锡克教分离主义的领导人，呼吁建立独立的锡克教国家。警方周日表示已经逮捕了 112 人，但 Singh 仍然在逃。根据 Access Now 的统计，印度连续五年成为 Access Now 记录到的断网次数最多的国家。
+<p></p>
+]]></description>
+            <pubDate>Tue, 21 Mar 2023 14:09:25 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[以 BitTorrent 的方式在家用电脑上运行大语言模型]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74446]]></link>
+            <description><![CDATA[OpenAI 的 AI 聊天机器人 ChatGPT 运行在微软的 Azure 云计算平台，普通用户即使能获得 ChatGPT 使用的大语言模型 GPT-3 或 GPT-4，也不可能在家用电脑上运行它们。如果人人都能运行一个分布式计算系统，联合起来打造一个在算力上能与最强大云计算平台匹敌的平台，那么我们有可能在自己的家用电脑上运行和使用类似
+ChatGPT 的 AI 聊天机器人。BigScience 社区正在开发名为 Petal 的系统，以 BitTorrent 的方式在家用电脑上运行大语言模型。Petal 可以集成最新的大语言模型，当前支持性能与 GPT-3 相近的 BLOOM-176B 大语言模型。
+<p></p>
+]]></description>
+            <pubDate>Tue, 21 Mar 2023 13:51:29 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Google 将拼多多应用标记为恶意程序]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74445]]></link>
+            <description><![CDATA[Google 周一将拼多多的多个应用标记为恶意程序，Android 手机使用的安全机制 Google Play Protect 将阻止用户安装拼多多应用，对于已经安装的应用，Google 将建议用户卸载。Google 同时出于安全理由从官方应用商店  Play Store 下架了拼多多应用。在这之前，中国安全研究人员披露拼多多应用包含有恶意功能，能利用漏洞提权阻止卸载并能监视用户。拼多多尚未对此次事件发表评论。
+<p></p>
+]]></description>
+            <pubDate>Tue, 21 Mar 2023 12:56:23 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[褐寡妇打败黑寡妇]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74444]]></link>
+            <description><![CDATA[在蜘蛛物种中，没有比黑寡妇更知名更令人畏惧的了。然而它们在与外来物种褐寡妇的竞争中逐渐失利。凡是有褐寡妇的地方，黑寡妇消失殆尽。黑寡妇原产于北美洲，通常会避开人类，美国每年发生的被黑寡妇蜘蛛叮咬的病例只有逾千例，死亡极其罕见。黑寡妇在受到骚扰时一般不会咬人，只有人类尝试去捏它们才会咬你。褐寡妇是一种外来物种，最早可能是在 1935 年登陆美国，它的毒液比其美洲的近亲要少，但攻击性更强。研究人员发现褐寡妇会追逐并杀死黑寡妇。将褐寡妇与黑寡妇等动物关在一起，褐寡妇杀死黑寡妇的可能性是其它物种的 6.6 倍，年轻的褐寡妇有五分之四的时间是在吃黑寡妇。成年褐寡妇攻击性没有这么强。褐寡妇喜欢住在城市和郊区，而黑寡妇喜欢沙漠和林地也喜欢郊区，它们可能最终会被赶到更偏僻的地方。
+<p></p>
+]]></description>
+            <pubDate>Mon, 20 Mar 2023 23:18:29 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[新基因编辑技术成功逆转小鼠视力损失 ]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74443]]></link>
+            <description><![CDATA[视网膜色素变性症是人类失明的主要原因之一。中国研究人员成功地恢复了患有视网膜色素变性症的小鼠的视力。研究发表在《实验医学杂志》上。该研究使用一种新型的、高度通用的 CRISPR 基因组编辑技术，有潜力纠正各种导致疾病的遗传突变。视网膜色素变性症可以由 100 多个不同基因的突变引起，估计每 4000 人中就有一人受到影响。它始于感知暗光的视杆神经元的功能障碍和死亡，然后发展到感知色彩所需的视锥神经元的死亡，最终导致严重且不可逆的视力损失。武汉科技大学的姚凯教授和他的同事尝试恢复因编码关键酶 PDE6β 的基因突变引起的视网膜色素变性小鼠的视力。为了做到这一点，姚凯的团队开发了一种新的、更加通用的 CRISPR 系统，称为PESpRY。这种系统可以编程纠正多种不同类型的基因突变，并且不受其突变位置的限制。PESpRY 系统能够有效地靶向纠正突变的 PDE6β 基因，并在小鼠的视网膜中恢复该酶的活性，从而防止了视杆和视锥神经元的死亡，并恢复了它们对光的正常电反应。
+<p></p>
+]]></description>
+            <pubDate>Mon, 20 Mar 2023 22:56:05 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[科学家找到方法控制雄蚊的精子]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74442]]></link>
+            <description><![CDATA[根据发表在《PLOS ONE》期刊上的论文，加州大学河滨分校的一项新研究表明，负责激活蚊子精子的蛋白质可能会被关闭，从而阻止它们游动到卵子中或使卵子受精。这项研究可以帮助控制库蚊的数量，库蚊是一种常见的家蚊，会传播脑肿胀性脑炎和西尼罗河病毒。研究小组此前确定，精子在进入生殖道时需要钙来推动运动，钙通道蛋白质的分析为控制蚊子提供了一条途径，比其他可能产生意想不到的毒性作用的方法更环保。关键字是控制，而不是根除。即使固定精子对经过处理的蚊子是 100% 有效的，但杀死所有蚊子是不可能的，也是不可取的。这项技术将改变特定蚊子种群中可育雄性与不育雄性的比例，而不是将它们全部消灭。
+<p></p>
+]]></description>
+            <pubDate>Mon, 20 Mar 2023 22:51:10 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Curl 8.0.0 释出]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74441]]></link>
+            <description><![CDATA[庆祝项目诞生 25 周年，curl 作者 Daniel Stenberg 宣布释出 v8.0.0 ，称该版本没有 API 或 ABI 破坏，也就是不会造成向后兼容性问题。该版本修复了 6 个新漏洞，其中 5 个危险等级低，另外一个为中等。它的另一个主要变化是构建系统不再支持缺乏可工作 64 位数据类型的系统，其它主要是 bug 修复。
+<p></p>
+]]></description>
+            <pubDate>Mon, 20 Mar 2023 21:24:50 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[鸟儿搭乘海上船只的便车]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74440]]></link>
+            <description><![CDATA[鸟儿是海洋船舶意想不到的偷渡者。这种现象是如此普遍，以至于出现了一个专有名词——船舶辅助的迁徙（ship-assisted migration）。意大利动物学家 Maurizio Sarà 是最早系统性研究鸟儿搭海上便车现象的科学家。2021 年 Sarà 在地中海开展了为期一个月的研究航行，他旨在调查海豚、海龟等海洋物种，但在航行过程中不断注意到鸟儿降落在船上。他开始了记录。平均每天有 3 只鸟在船上逗留，停留的中位数时间是 42 分钟，还有鸟儿会在船上过夜。地中海上航行的船只每天有数千艘，有数十亿只鸟在迁徙过程中穿越大海。它们会在岛屿上停留，但岛屿远没有船只常见，Sarà 估计可能有多达 400 万只鸟会在迁徙中搭乘地中海上船舶的便车。每年有大约 9 万艘商业船只定期在世界水域中航行。Sarà 推测鸟儿因此发展出一种新的迁徙策略，借助船只度过迁徙中最累人的部分，以及从疲劳中恢复过来。
+<p></p>
+]]></description>
+            <pubDate>Mon, 20 Mar 2023 20:52:19 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[北海鳕鱼在变小]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74439]]></link>
+            <description><![CDATA[海洋捕鱼行业驱动了鱼类的演化，因为捕鱼船更可能捕捉成熟晚体型大的鱼，成熟更早体型更小的鱼具有了生存优势。这意味着鱼群向着更小体型演化。根据发表在《nature sustainability》期刊上的一项研究，研究人员以北海鳕鱼为研究对象，探讨了这种体型变小的趋势是否可能逆转。研究人员认为，如果渔业管理以百年为周期，减少鳕鱼的捕捞，那么逆转体型变小的趋势是可能的，因为鱼的演化本身就很缓慢。
+<p></p>
+]]></description>
+            <pubDate>Mon, 20 Mar 2023 20:16:33 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[转基因水稻可能能在火星上生长]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74438]]></link>
+            <description><![CDATA[火星土壤一般不适合种植植物，但美国科学家利用 CRISPR 基因编辑技术，使水稻的 OsSnRK1 基因发生突变，经过基因编辑的水稻能在恶劣的环境下发芽生长。研究人员称，这种水稻或许能在火星上生长。火星土壤的营养物质比地球土壤少，且含有一些对植物有毒的化合物。为了解新水稻品种在这种土壤条件下的生存能力，研究人员在一系列常规盆栽土壤、人造火星土壤 MMS-1，以及两者各种比例组成的混合土壤中种植水稻种子。结果发现，经过基因编辑的水稻能在只有 25% 盆栽土壤的混合土壤中生长，长势几乎与在 100% 盆栽土壤中生长的水稻一样。此外，在人造火星土壤中种植的水稻与在盆栽土壤中种植的水稻相比，芽更短且根部更长。研究人员还发现，即使在人造火星土壤中添加少量高氯酸盐（火星表面发现的有毒化学物质），经过基因编辑的水稻种子也能发芽。他们计划测试拥有更多突变的水稻种子，以获得能适应火星土壤及火星稀薄大气层的水稻。
+<p></p>
+]]></description>
+            <pubDate>Mon, 20 Mar 2023 17:49:17 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Ken Thompson 称他正从 Mac 切换到 Linux ]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74437]]></link>
+            <description><![CDATA[图灵奖得主、Unix、Plan9、UTF8 和 Go 语言等项目的联合创始人 Ken Thompson 在 SCALE 20x 会议上谈论了他正在使用的操作系统。Thompson 说在他的大部分人生中一直用的是苹果的操作系统，但过去五年苹果的做法令他越来越感到沮丧，苹果对用户能做什么不能做什么越来越令人感到无法容忍。他说自己正从 Mac 切换到 Linux——特别是设计运行在树莓派上的 Debian 操作系统 Raspbian。80 岁的 Thompson 可能是在开玩笑。
+<p></p>
+]]></description>
+            <pubDate>Mon, 20 Mar 2023 17:45:16 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Web3 基础设施基金会于香港成立：欢迎来到真实的荒漠]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74436]]></link>
+            <description><![CDATA[Shawn the R0ck 写道：Web3 技術和哲學的源起可以追溯到1990年代的密碼朋克社區。該社區由一群關注個人隱私、自由和開放的技術人員組成，他們反對集中式的權威機構對個人數據的掌控和濫用。Web3 基礎設施中所採用的去中心化、開源、隱私保護、数据既资产等理念正是源於密碼朋克社區的理念。Web3 基礎設施的技術涉及共識算法（PoW/PoS）、聯邦化、零知識證明（SNARKs 以及環籤名）、Relay Based Protocol、DID（去中心化身份認證）、可信計算、機密計算、操作系統運行時安全、軟件和硬件供應鏈安全、分布式賬本（區塊鏈）等多個領域。這些技術的發展也受到了密碼朋克社區的啟發，旨在讓個人和企業用戶擁有更多的數據所有權和控制權，讓網絡變得更加開放、自由和安全。<br>
+<br>
+為了推進 Web3 基礎設施生態的發展，Web3 基礎設施基金會（Web3 Infrastructure Foundation，簡稱W3IF）於 2023 年 2 月在香港成立，由 Flomesh，Starnet 和 HardenedVault 聯合發起，三家創始會員對基金會的發展已經有一些計劃，Flomesh 作爲專注網络軟體基礎設施技術的開源軟體公司将為基金會提供Web3 所需要的網络基礎設施軟體，Starnet 計劃向基金会贡献多个高性能去中心化的网络、存储以及计算的開源项目。HardenedVault 是一家專注開源基礎架構安全的公司，計劃通過基金會起草節點安全 Specification 的工作以讓整個社區受益。基金會的kick-off meeting於2023年3月18日在香港數碼港舉行，Govering Board成員對為什麼要設立基金會以及生態共建等議題進行了分享。同時也邀請了香港科技大學Prof. James Lei和硬體駭客Stewart Mackenzie針對web3基礎設施領域議題進行了分享。
+<p></p>
+]]></description>
+            <pubDate>Mon, 20 Mar 2023 14:59:40 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[2022 年度自由软件奖宣布]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74435]]></link>
+            <description><![CDATA[自由软件基金会（FSF）宣布了 2022 年度的自由软件奖得主。社会公益项目奖授予了软件电话项目 GNU Jami，此前获得该奖的项目包括了 OpenStreetMap、Public Lab 和 Let's Encryp。杰出新自由软件贡献者奖授予了 DivestOS 项目的 Tad (SkewedZeppelin)，DivestOS 是 LineageOS 的分支，主要是移除了其中的私有软件包。自由软件进步奖授予了 Eli Zaretskii，他是 GNU Emacs 项目的共同维护者。
+<p></p>
+]]></description>
+            <pubDate>Mon, 20 Mar 2023 14:38:19 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[curl 作者回顾过去二十五年]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74434]]></link>
+            <description><![CDATA[curl 作者 Daniel Stenberg 回顾了项目经历的二十五年。发布 curl 首个版本时是他只有 27 岁，当时是 Frontec Tekniksystem 的软件工程师，主要是为瑞典产品开发公司从事嵌入式系统的合同开发工作。他当时养成了一个习惯，每天晚上会熬夜花一两个小时从事个人项目的开发。curl 背后的开发理念是逐步迭代在所有方面进行改进，它也并不是突然流行起来的，用户数是逐步增长的，在 1998 年只有少数用户，到 2010 年增加到数亿用户。很难估计现在 curl 有多少用户，但估计远超 100 亿，URL 的 API 库 libcurl 几乎被每一个联网的设备和系统使用。他的 curl 之路始于 1996 年底，他下载了 Rafael Sagula 开发的工具 httpget，每天自动下载货币汇率，确保他的货币兑换器能正常工作。httpget 有些漏洞，他向作者递交了补丁。Rafael 认为他可以接手维护该项目，所以他接手了。他逐步加入了对 GOPHER 的支持，改变项目名称，增加对 FTP 的支持，在 1998 年初增加了对 FTP 上传的支持...后面就是历史。
+<p></p>
+]]></description>
+            <pubDate>Mon, 20 Mar 2023 14:15:06 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[LLVM 编辑器套件释出 v16.0.0 ]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74433]]></link>
+            <description><![CDATA[LLVM 编辑器套件释出了 v16.0.0，主要新变化包括：默认用 C++17 构建，工具链的软要求现在变成硬要求——构建需要 GCC 版本&gt;= 7.1，Clang &gt;= 5.0，Apple Clang &gt;= 10.0，Visual Studio 2019 &gt;= 16.7，CMake &gt;= 3.20.0；Clang 默认的 C++/ObjC++ 标准是 gnu++17 而不是 gnu++14，等等，更多可浏览详细的发布公告。
+<p></p>
+]]></description>
+            <pubDate>Mon, 20 Mar 2023 13:35:52 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[中国二手市场出现假冒的三星 980 Pro SSD]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74432]]></link>
+            <description><![CDATA[三星 980 Pro SSD 虽然已被 990 Pro 所取代，但它仍然是市场上最出色的 SSD 产品之一，因此市场上出现假冒的 980 Pro 并不令人感到意外。中国用户报告在二手产品市场闲鱼买到了假冒的三星 980 Pro SSD，该产品甚至能愚弄三星的 Magician 软件。假冒的产品使用了联芸科技 MAP1602A PCIe 4.0 SSD 控制器和长江存储的  128 层 TLC 3D NAND (X2-9060)芯片，三星的正品 980 Pro 都是使用自家的控制器和 NAND 芯片。假冒产品的读写速度在 4.8 GBps 和 4.5 GBps 左右，而三星产品在 7 GBps 和 5 Gbps 左右。
+<p></p>
+]]></description>
+            <pubDate>Mon, 20 Mar 2023 12:37:57 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Mastodon 用户数突破一千万]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74431]]></link>
+            <description><![CDATA[去中心化微博客平台 Mastodon 公布的统计数据显示，它的用户数突破了一千万。在马斯克（Elon Musk）收购 Twitter 前，Mastodon 有大约 50 万活跃用户。在马斯克一系列受争议的操作之后，Mastodon 在 11 月份涌入了大量用户，高峰时每天新增逾 13 万用户。如今 Mastodon 的活跃度略有下降，每小时大约增加 2000 左右的用户，每天增加 4.5 万左右的用户，它的用户数目前达到了 1001 万。
+<p></p>
+]]></description>
+            <pubDate>Mon, 20 Mar 2023 11:30:39 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[硅谷银行和 Peter Thiel]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74430]]></link>
+            <description><![CDATA[在硅谷银行的倒闭过程中保守派亿万富翁 Peter Thiel 的作用引起了人们的注意。硅谷银行死于银行挤兑，它手中的资产其实是充足的。有调查记者认为，硅谷银行没有妥善防范两大威胁：其一是 Peter Thiel 的影响其二是利率上升。Peter Thiel 的风投基金 Founders Fund 从硅谷银行转移出了全部资金，并建议其投资组合公司也从硅谷银行撤资。在硅谷银行的倒闭过程中 Peter Thiel 和另一位亿万富翁、对冲基金经理 Bill Ackman 就像是一个拥挤的剧院大喊着火了。包括 Coatue Management、Union Square Ventures 和 Founder Collective 在内的风投基金都被认为在事件中散播了恐慌，但这些公司坚称它们提供了最符合客户利益的金融建议。Thiel 则告诉《金融时报》他本人有 5000 万美元的资金留在硅谷银行，因其倒闭而短暂冻结。
+<p></p>
+]]></description>
+            <pubDate>Sun, 19 Mar 2023 23:50:58 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[暗网数据泄密网站 BreachForums 站长被捕]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74429]]></link>
+            <description><![CDATA[美国 FBI 周三逮捕了一名纽约男子，他被控运营了暗网网络犯罪论坛 BreachForums，该论坛是世界最大的出售被盗数据的网站之一。FBI 于周三下午 4:30 左右逮捕了名叫 Conor Brian Fitzpatrick 的男子，他被认为就是 BreachForums 的管理员 Pompompurin。记录显示，他最后一次访问 BreachForums 是在周三下午 3:53，也就是被捕前不久。BreachForums 托管了近千家企业的被盗数据库。数据库通常包括有个人信息，如姓名、电子邮件和密码。Fitzpatrick 以 30 万美元保释金获释，他将于 3 月 24 日出庭。
+<p></p>
+]]></description>
+            <pubDate>Sun, 19 Mar 2023 23:05:51 +0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[马斯克宣布将在 3 月 31 日公开 Twitter 推荐算法源代码 ]]></title>
+            <link><![CDATA[https://www.solidot.org/story?sid=74428]]></link>
+            <description><![CDATA[Twitter CEO 马斯克（Elon Musk）上个月表示将在二月底公开社交网站使用的推荐算法源代码。但这一承诺并未兑现。本周末马斯克给出了更明确的时间，宣布将在 3 月 31 日公开 Twitter 推荐算法源代码。马斯克并非是一位一诺千金的亿万富翁，所以他的最新承诺需要时间去检验。
+<p></p>
+]]></description>
+            <pubDate>Sun, 19 Mar 2023 22:43:39 +0800</pubDate>
+        </item>
+    </channel>
+</rss>
